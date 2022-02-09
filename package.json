@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=3333 next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "PORT=3333 next start",
-    "export": "next export"
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out"
   },
   "dependencies": {
     "@dfinity/agent": "0.9.2",
@@ -46,6 +48,7 @@
     "@types/react-select": "^4.0.17",
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.5",
+    "serve": "^13.0.2",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.4.4"
   }

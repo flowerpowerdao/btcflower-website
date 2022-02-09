@@ -4,9 +4,16 @@ import React, { useEffect, useState } from "react";
 export default function Flower() {
     function randomIntFromInterval(min, max) {
         // min and max included
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        let index = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log(index);
+        return index;
     }
-    const [index,setIndex] = useState(randomIntFromInterval(0,2008));
+    const [index, setIndex] = useState(null);
+
+    useEffect(() => {
+        setIndex(randomIntFromInterval(0, 2008));
+    }, []);
+
     return (
         <div className="h-108">
             <a
