@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import IdentifierLabelWithButtons from "../Buttons/IdentifierLabelWithButtons";
+import TradeButton from "../Buttons/TradeButton";
 import { useGlobalContext } from "../Store/Store";
 
 const LoginButton = dynamic(() => import("../Buttons/LoginButton"), {
@@ -59,7 +60,8 @@ export default function Nav() {
                 />
               </div>
             )}
-            <LoginButton />
+            <TradeButton />
+            {/* <LoginButton /> */}
           </div>
         </div>
       </nav>

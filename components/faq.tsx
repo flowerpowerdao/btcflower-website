@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "What is pricing for participation?",
     answer:
-      "The floor price for each flower at launch will be 3 ICP for whitelisted members and 5 ICP on the open market. They will each be issued as uniform seeds that grow into a uniquely generated flower decided by the Internet Computer’s randomness. The fee for trading on secondary markets is 5%.",
+      "The floor price for each flower at launch will be 3 ICP for whitelisted members and 5 ICP on the open market. They will each be issued as uniform seeds that grow into a uniquely generated flower decided by the Internet Computer’s randomness. The fee for trading on secondary markets is 8.5%.",
   },
   {
     question: "What makes a BTC Flower unique?",
